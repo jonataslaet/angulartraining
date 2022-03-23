@@ -22,7 +22,6 @@ export class ProductService {
   }
 
   readAll(): Observable<Product[]> {
-    console.log('called ProductService.readAll()');
     return this.httpClient.get<Product[]>(this.baseURL);
   }
 

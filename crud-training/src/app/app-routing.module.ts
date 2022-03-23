@@ -5,6 +5,15 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 
 const routes: Routes = [
   {
+    path: "",
+    pathMatch: 'full',
+    redirectTo: 'products'
+  },
+  {
+    path: "products",
+    component: ProductListComponent
+  },
+  {
     path: "products/update/:id",
     component: ProductUpdateComponent
   }

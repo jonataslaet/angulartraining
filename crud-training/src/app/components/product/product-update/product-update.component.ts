@@ -11,20 +11,19 @@ import { ProductService } from '../product.service';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  product: Product;
+  product: Product = {name: '', price: null};
 
   constructor(
     private productService: ProductService,
-    private router: Router) { }
+    private router: Router,
+    private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     
-    const id = 1;//this.activatedRoute.snapshot.paramMap.get('id');
-    console.log('called2...' + id);
+    const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.productService.readById(id+'').subscribe(prod => {
-      console.log('called...');
       this.product = prod;
-      //this.productService.showMessage('Produto carregado');
+      this.productService.showMessage('Produto carregado');
     })
   }
 
@@ -33,6 +32,10 @@ export class ProductUpdateComponent implements OnInit {
       this.productService.showMessage('Produto atualizado');
       this.router.navigate(['/products']);
     })
+  }
+
+  cancel(): void {
+    this.router.navigate(['/products']);
   }
 
 }
