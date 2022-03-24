@@ -1,6 +1,6 @@
 <form action="">
-    <input type="text" [(ngModel)]="product.name" placeholder="Nome">
-    <input type="text" [(ngModel)]="product.price" placeholder="Preço(R$)">
+    <input type="text" [(ngModel)]="product.name" placeholder="Nome" name="name">
+    <input type="text" [(ngModel)]="product.price" placeholder="Preço(R$)" name="price">
     <button (click)="createProduct()">Criar</button>
     <button (click)="cancel()">Cancelar</button>
 </form>
