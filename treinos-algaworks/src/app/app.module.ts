@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HelloWithCliComponent } from './components/greetings/hello-with-cli/hello-with-cli.component';
+import { HelloWithMyhandsComponent } from './components/greetings/hello-with-myhands/hello-with-myhands.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HelloWithCliComponent,
+    HelloWithMyhandsComponent
   ],
   imports: [
     BrowserModule,
