@@ -11,6 +11,7 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 import { ProductListComponent } from './components/product/product-list/product-list.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductDetailComponent } from './components/product/product-detail/product-detail.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     ProductUpdateComponent,
     ProductListComponent,
     ProductDeleteComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

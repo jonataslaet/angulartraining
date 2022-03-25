@@ -2,7 +2,8 @@
     <li *ngFor="let prod of products">
         {{prod.name}} - {{prod.price}} - 
         <a href="" routerLink='/products/update/{{prod.id}}'>edit</a> - 
-        <a href="" routerLink='/products/delete/{{prod.id}}'>delete</a>
+        <a href="" routerLink='/products/delete/{{prod.id}}'>delete</a> - 
+        <a href="" routerLink='/products/detail/{{prod.id}}'>view</a>
     </li>
 </ul>
 <a href="" routerLink='/products/create'>create</a>
