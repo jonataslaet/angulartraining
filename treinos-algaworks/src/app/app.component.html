@@ -1,2 +1,15 @@
-<app-hello-with-myhands></app-hello-with-myhands>
-<app-hello-with-cli></app-hello-with-cli>
+<!-- <app-hello-with-myhands></app-hello-with-myhands> -->
+<!-- <app-hello-with-cli></app-hello-with-cli> -->
+
+<div class="container">
+    <div class="alert alert-warning" role="alert">
+        Funcionário adicionado com sucesso: {{title}}
+    </div>
+
+    <div class="form-group">
+        <label>Name: </label>
+        <input type="text" class="form-control" placeholder="Nome" (input)="alterarNome($event)">
+    </div>
+
+    <button type="button" class="btn btn-success" (click)="adicionar()">Adicionar</button>
+</div>
