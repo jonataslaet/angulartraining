@@ -13,4 +13,7 @@ export class AppComponent {
     this.title = name.value;
   }
 
+  alterarNome(event: any) {
+    this.title = event.target.value;
+  }
 }
