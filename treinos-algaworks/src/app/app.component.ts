@@ -9,11 +9,11 @@ import { Event } from '@angular/router';
 export class AppComponent {
   title = 'treinos-algaworks';
 
-  adicionar(name: HTMLInputElement): void {
-    this.title = name.value;
+  adicionar(): void {
+    this.title = 'Laet ' + Math.round(Math.random() * 100);
   }
 
-  alterarNome(event: any) {
-    this.title = event.target.value;
+  alterarNome(nome: any) {
+    this.title = nome.target.value;
   }
 }

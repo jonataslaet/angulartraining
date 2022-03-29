@@ -8,10 +8,10 @@
 
     <div class="form-group">
         <label>Name: </label>
-        <input #nameInput type="text" class="form-control" placeholder="Nome" (input)="alterarNome($event)">
+        <input #nameInput type="text" class="form-control" placeholder="Nome" (input)="alterarNome($event)" [(ngModel)]="title">
     </div>
 
-    <button type="button" class="btn btn-success" (click)="adicionar(nameInput)" 
+    <button type="button" class="btn btn-success" (click)="adicionar()" 
     [disabled]="title.length === 0"
     >Adicionar</button>
 </div>
