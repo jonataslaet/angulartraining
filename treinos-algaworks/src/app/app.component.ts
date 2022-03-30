@@ -8,9 +8,11 @@ import { Event } from '@angular/router';
 })
 export class AppComponent {
   title = 'treinos-algaworks';
+  adicionado = false;
 
   adicionar(): void {
-    this.title = 'Laet ' + Math.round(Math.random() * 100);
+    this.adicionado = true;
+    this.title += ' ' + Math.round(Math.random() * 100);
   }
 
   alterarNome(nome: any) {
