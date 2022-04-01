@@ -14,7 +14,7 @@ export class AppComponent {
 
   adicionar(): void {
     this.adicionado = true;
-    this.title += ' ' + Math.round(Math.random() * 100);
+    this.title += ' ' + (this.lastId+1);
     this.names.push({id: ++this.lastId, name: this.title});
   }
 
