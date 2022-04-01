@@ -7,14 +7,15 @@ import { Event } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  lastId: number = 0;
   title = 'treinos-algaworks';
   adicionado = false;
-  names: string[] = [];
+  names = [];
 
   adicionar(): void {
     this.adicionado = true;
     this.title += ' ' + Math.round(Math.random() * 100);
-    this.names.push(this.title);
+    this.names.push({id: ++this.lastId, name: this.title});
   }
 
   alterarNome(nome: any) {
