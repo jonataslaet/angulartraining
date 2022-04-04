@@ -1,5 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
-import { Event } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +9,12 @@ export class AppComponent {
   lastId: number = 0;
   title = 'treinos-algaworks';
   adicionado = false;
-  names = [];
+  funcionarios = [];
 
   adicionar(): void {
     this.adicionado = true;
     this.title += ' ' + (this.lastId+1);
-    this.names.push({id: ++this.lastId, name: this.title});
+    this.funcionarios.push({id: ++this.lastId, name: this.title});
   }
 
   alterarNome(nome: any) {

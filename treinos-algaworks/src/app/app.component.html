@@ -15,8 +15,8 @@
         [disabled]="title.length === 0">Adicionar</button>
 
     <div class="row" style="margin-top: 10px;">
-        <div class="card col-3" *ngFor="let name of names">
-            <app-funcionario-card [func]="name"></app-funcionario-card>
+        <div class="card col-3" *ngFor="let f of funcionarios">
+            <app-funcionario-card [func]="f"></app-funcionario-card>
         </div>
     </div>
 
