@@ -15,4 +15,10 @@ export class FuncionarioCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getStyle() {
+    return this.funcionario.id % 2 == 0 ?
+      { 'color': 'red', backgroundColor: 'green' } :
+      { 'color': 'blue', backgroundColor: 'yellow' }
+  }
+
 }
