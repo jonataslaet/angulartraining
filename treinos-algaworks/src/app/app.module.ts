@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HelloWithCliComponent } from './components/greetings/hello-with-cli/hello-with-cli.component';
 import { HelloWithMyhandsComponent } from './components/greetings/hello-with-myhands/hello-with-myhands.component';
 import { FuncionarioCardComponent } from './components/funcionario-card/funcionario-card.component';
+import { FuncionarioFormComponent } from './components/funcionario-form/funcionario-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWithCliComponent,
     HelloWithMyhandsComponent,
-    FuncionarioCardComponent
+    FuncionarioCardComponent,
+    FuncionarioFormComponent
   ],
   imports: [
     BrowserModule,
