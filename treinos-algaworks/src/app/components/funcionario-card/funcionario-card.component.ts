@@ -21,4 +21,7 @@ export class FuncionarioCardComponent implements OnInit {
       { 'color': 'blue', backgroundColor: 'yellow' }
   }
 
+  isAdmin() {
+    return this.funcionario.name.startsWith('T') || this.funcionario.name.startsWith('t');
+  }
 }
