@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { TabViewModule } from 'primeng/tabview';
 import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -13,8 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TabViewModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
