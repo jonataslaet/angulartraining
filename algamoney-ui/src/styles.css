@@ -21,7 +21,7 @@ label {
 }
 
 .col-valor-content {
-    text-align: right;
+    text-align: center;
 }
 
 .col-data-header {
@@ -30,4 +30,12 @@ label {
 
 .col-data-content {
     text-align: center;
+}
+
+.col-acoes {
+    width: 140px;
+}
+
+.col-acoes > a {
+    margin-right: 5px;
 }
