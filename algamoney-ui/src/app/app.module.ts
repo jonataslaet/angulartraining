@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { AppComponent } from './app.component';
-import { LancamentosPesquisaComponent } from './componenets/lancamentos-pesquisa/lancamentos-pesquisa.component';
+import { LancamentosPesquisaComponent } from './components/lancamentos-pesquisa/lancamentos-pesquisa.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LancamentosPesquisaComponent
+    LancamentosPesquisaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
