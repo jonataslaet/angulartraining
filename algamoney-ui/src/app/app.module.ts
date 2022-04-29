@@ -9,12 +9,14 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AppComponent } from './app.component';
 import { LancamentosPesquisaComponent } from './components/lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PessoasPesquisaComponent } from './components/pessoas-pesquisa/pessoas-pesquisa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentosPesquisaComponent,
-    NavbarComponent
+    NavbarComponent,
+    PessoasPesquisaComponent
   ],
   imports: [
     BrowserModule,

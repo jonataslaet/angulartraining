@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="grid">
+
+        <div class="col-x-12">
+            <h1>Pessoas</h1>
+        </div>
+
+        <div class="col-x-12 p-fluid">
+            <label>Nome</label>
+            <input type="text" pInputText>
+        </div>
+
+        <button pButton type="button" label="Pesquisar"></button>
+
+    </div>
+
+    <div class="grid">
+        <div class="col-x-12">
+            <p-table [value]="pessoas" [paginator]="true" [rows]="3" [responsive]="true">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cidade</th>
+                        <th class="col-data-header">Estado</th>
+                        <th class="col-data-header">Status</th>
+                        <th class="col-valor-header"><button pButton label="Ações"></button></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-pessoa>
+                    <tr>
+                        <td>{{pessoa.nome}}</td>
+                        <td>{{pessoa.cidade}}</td>
+                        <td class="col-data-content">{{pessoa.estado}}</td>
+                        <td class="col-valor-content" [ngStyle]="{color: pessoa.status === 'ATIVO'?'blue':'red'}">
+                            {{pessoa.status}}</td>
+                        <td class="col-acoes">
+                            <a pButton icon="pi pi-pencil" pTooltip="Editar essa pessoa" tooltipPosition="top"></a>
+                            <button pButton icon="pi pi-trash" pTooltip="Apagar essa pessoa"
+                                tooltipPosition="top"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+        <div class="col-x-12">
+            <a pButton label="Nova Pessoa"></a>
+        </div>
+    </div>
+</div>
