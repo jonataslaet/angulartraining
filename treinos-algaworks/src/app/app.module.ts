@@ -8,6 +8,7 @@ import { HelloWithCliComponent } from './components/greetings/hello-with-cli/hel
 import { HelloWithMyhandsComponent } from './components/greetings/hello-with-myhands/hello-with-myhands.component';
 import { FuncionarioCardComponent } from './components/funcionario-card/funcionario-card.component';
 import { FuncionarioFormComponent } from './components/funcionario-form/funcionario-form.component';
+import { CampoColoridoDirective } from './campo-colorido.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FuncionarioFormComponent } from './components/funcionario-form/funciona
     HelloWithCliComponent,
     HelloWithMyhandsComponent,
     FuncionarioCardComponent,
-    FuncionarioFormComponent
+    FuncionarioFormComponent,
+    CampoColoridoDirective
   ],
   imports: [
     BrowserModule,
