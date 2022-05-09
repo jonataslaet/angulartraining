@@ -5,7 +5,7 @@
 <div class="form-group">
     <label>Name: </label>
     <input appCampoColorido type="text" class="form-control" placeholder="Nome" [(ngModel)]="title" (focus)="adicionado = false">
-    <input type="text" class="form-control" placeholder="Nome" [(ngModel)]="title" (focus)="adicionado = false">
+    <input type="text" class="form-control" placeholder="Nome" [(ngModel)]="title" (focus)="adicionado = false" [appCampoColorido]="'gray'">
 </div>
 
 <button type="button" class="btn btn-success" (click)="adicionar()"
