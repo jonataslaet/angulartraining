@@ -9,8 +9,12 @@ export class AppComponent {
   title = 'learning-angular';
   hero = 'Drogfisher'
 
-  onLike() {
-    window.alert(`I like ${this.hero}`);
+  onLike(like: boolean) {
+    if (like) {
+      window.alert(`I like ${this.hero}`);
+    } else {
+      window.alert(`I don't like ${this.hero}`);
+    }
   }
 
 }
