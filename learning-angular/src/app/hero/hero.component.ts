@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeroComponent implements OnInit {
 
   @Input() name: string;
+  @Output() liked = new EventEmitter();
 
   constructor() { }
 
