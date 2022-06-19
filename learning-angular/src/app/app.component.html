@@ -1,1 +1,2 @@
-<app-hero [name]="hero" (liked)="onLike($event)"></app-hero>
+<span>{{heroCmp.name}}</span>
+<app-hero [name]="hero" #heroCmp (liked)="onLike($event)"></app-hero>
