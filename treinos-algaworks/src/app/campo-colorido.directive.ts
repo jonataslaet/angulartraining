@@ -1,7 +1,8 @@
 import { Directive, HostBinding, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appCampoColorido]'
+  selector: '[appCampoColorido]',
+  exportAs: 'ColoracaoDeCampo'
 })
 export class CampoColoridoDirective {
 
@@ -10,12 +11,12 @@ export class CampoColoridoDirective {
   @HostBinding('style.backgroundColor') corDeFundo: string;
 
   @HostListener('focus')
-  onFocus() {
+  onColor() {
     this.corDeFundo = this.cor;
   }
 
   @HostListener('blur')
-  offFocus() {
+  offColor() {
     this.corDeFundo = 'transparent';
   }
 

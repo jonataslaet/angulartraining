@@ -5,8 +5,11 @@
 <div class="form-group">
     <label>Name: </label>
     <input appCampoColorido type="text" class="form-control" placeholder="Nome" [(ngModel)]="title" (focus)="adicionado = false">
-    <input type="text" class="form-control" placeholder="Nome" [(ngModel)]="title" (focus)="adicionado = false" [appCampoColorido]="'gray'">
+    <input type="text" class="form-control" placeholder="Nome" [(ngModel)]="title" (focus)="adicionado = false" [appCampoColorido]="'gray'" #campo="ColoracaoDeCampo">
 </div>
 
 <button type="button" class="btn btn-success" (click)="adicionar()"
     [disabled]="title.length === 0">Adicionar</button>
+
+<button type="button" class="btn btn-warning" (click)="campo.onColor()">Colorir</button>
+<button type="button" class="btn btn-danger" (click)="campo.offColor()">Descolorir</button>
