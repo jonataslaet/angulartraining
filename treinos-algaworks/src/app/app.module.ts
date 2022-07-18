@@ -9,6 +9,7 @@ import { HelloWithMyhandsComponent } from './components/greetings/hello-with-myh
 import { FuncionarioCardComponent } from './components/funcionario-card/funcionario-card.component';
 import { FuncionarioFormComponent } from './components/funcionario-form/funcionario-form.component';
 import { CampoColoridoDirective } from './campo-colorido.directive';
+import { CanoConversorComponent } from './components/cano-conversor/cano-conversor.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CampoColoridoDirective } from './campo-colorido.directive';
     HelloWithMyhandsComponent,
     FuncionarioCardComponent,
     FuncionarioFormComponent,
-    CampoColoridoDirective
+    CampoColoridoDirective,
+    CanoConversorComponent
   ],
   imports: [
     BrowserModule,
