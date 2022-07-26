@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChangeTargetClickEventDirective } from './directives/change-target-click-event.directive';
+import { TelaComponent } from './presentation/tela/tela.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TelaComponent,
+    ChangeTargetClickEventDirective
   ],
   imports: [
     BrowserModule,
